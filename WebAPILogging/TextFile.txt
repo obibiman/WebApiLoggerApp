@@ -1,0 +1,1 @@
+﻿https://stackoverflow.com/questions/60116577/how-to-seed-in-entity-framework-core-3-0

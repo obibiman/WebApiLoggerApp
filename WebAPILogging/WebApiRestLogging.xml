@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApiRestLogging</name>
+    </assembly>
+    <members>
+        <member name="T:WebApiRestLogging.Controllers.GroceryController">
+            <summary>
+            GroceryController
+            </summary>
+        </member>
+        <member name="M:WebApiRestLogging.Controllers.GroceryController.#ctor(WebApiRestLogging.Services.IGroceryRepository,Microsoft.Extensions.Logging.ILogger{WebApiRestLogging.Controllers.GroceryController})">
+            <summary>
+            GroceryConroller Constructor
+            </summary>
+            <param name="repo"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:WebApiRestLogging.Controllers.GroceryController.GetGroceryById(System.Int32)">
+            <summary>
+            Get specific grocery object
+            </summary>
+            <param name="Id"></param>
+            <returns>Grocery</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Controllers.GroceryController.GetAllGroceries">
+            <summary>
+            Get list of groceries
+            </summary>
+            <returns>Groceris list</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Controllers.GroceryController.CreateGrocery(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            Create Grocery
+            </summary>
+            <param name="grocery"></param>
+            <returns>Http OK</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Controllers.GroceryController.UpdateGrocery(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            Update Grocery
+            </summary>
+            <param name="grocery"></param>
+            <returns>Http OK</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Controllers.GroceryController.DeleteGrocery(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            DeleteGrocery
+            </summary>
+            <param name="grocery"></param>
+            <returns>Http OK</returns>
+        </member>
+        <member name="T:WebApiRestLogging.Database.GroceryContext">
+            <summary>
+            GroceryContext
+            </summary>
+        </member>
+        <member name="M:WebApiRestLogging.Database.GroceryContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{WebApiRestLogging.Database.GroceryContext})">
+            <summary>
+            CroceryContext Cionstructor
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:WebApiRestLogging.Database.GroceryContext.Groceries">
+            <summary>
+            Groceries
+            </summary>
+        </member>
+        <member name="M:WebApiRestLogging.Database.GroceryContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            OnModelCreating
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:WebApiRestLogging.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:WebApiRestLogging.Program.Main(System.String[])">
+            <summary>
+            main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:WebApiRestLogging.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            CreateHostBuilder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApiRestLogging.Services.GroceryRepository">
+            <summary>
+            GroceryRepository
+            </summary>
+        </member>
+        <member name="M:WebApiRestLogging.Services.GroceryRepository.#ctor(WebApiRestLogging.Database.GroceryContext)">
+            <summary>
+            GroceryRepository Constructor
+            </summary>
+            <param name="ctxt"></param>
+        </member>
+        <member name="M:WebApiRestLogging.Services.GroceryRepository.GetByIdAsync(System.Int32)">
+            <summary>
+            GetByIdAsync
+            </summary>
+            <param name="Id"></param>
+            <returns>Grocery</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.GroceryRepository.CreateAsync(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            CreateAsync
+            </summary>
+            <param name="grocery"></param>
+            <returns>Grocery</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.GroceryRepository.DeleteAsync(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            DeleteAysnc
+            </summary>
+            <param name="grocery"></param>
+            <returns>Void</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.GroceryRepository.GetAllAsync">
+            <summary>
+            GetAllAsync
+            </summary>
+            <returns>List of Grocery</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.GroceryRepository.UpdateAsync(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            UpdateAsync
+            </summary>
+            <param name="grocery"></param>
+            <returns>Grocery</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.IGroceryRepository.CreateAsync(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            CreateAsync
+            </summary>
+            <param name="grocery"></param>
+            <returns>Grocery</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.IGroceryRepository.DeleteAsync(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            DeleteAsync
+            </summary>
+            <param name="grocery"></param>
+            <returns>void</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.IGroceryRepository.GetAllAsync">
+            <summary>
+            GetAllAsync
+            </summary>
+            <returns>Grocery list</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.IGroceryRepository.GetByIdAsync(System.Int32)">
+            <summary>
+            GetByIdAsync
+            </summary>
+            <param name="Id"></param>
+            <returns>Grocery</returns>
+        </member>
+        <member name="M:WebApiRestLogging.Services.IGroceryRepository.UpdateAsync(WebApiRestLogging.Models.Grocery)">
+            <summary>
+            UpdateAsync
+            </summary>
+            <param name="grocery"></param>
+            <returns>Grocery</returns>
+        </member>
+    </members>
+</doc>
