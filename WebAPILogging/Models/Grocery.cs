@@ -58,6 +58,7 @@ namespace WebApiRestLogging.Models
         /// </summary>
         [DataType(DataType.Date)]
         public DateTime? DateModified { get; set; }
+
         /// <summary>
         /// ModifiedBy
         /// </summary>

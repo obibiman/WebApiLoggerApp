@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebApiRestLogging.Models
 {
@@ -15,9 +14,10 @@ namespace WebApiRestLogging.Models
         [Key]
         //[DatabaseGenerated(DatabaseGeneratedOption.None)] // No identity column!
         public int Id { get; set; }
+
         /// <summary>
         /// ImageTitle
-        /// </summary>        
+        /// </summary>
         public string ImageTitle { get; set; }
 
         /// <summary>
@@ -51,6 +51,7 @@ namespace WebApiRestLogging.Models
         /// </summary>
         [DataType(DataType.Date)]
         public DateTime? DateModified { get; set; }
+
         /// <summary>
         /// ModifiedBy
         /// </summary>

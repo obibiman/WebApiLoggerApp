@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace WebApiRestLogging.Models
+﻿namespace WebApiRestLogging.Models
 {
     /// <summary>
     /// PictureTypes
@@ -14,10 +9,12 @@ namespace WebApiRestLogging.Models
         /// Jpg
         /// </summary>
         JPG,
+
         /// <summary>
         /// Jpeg
         /// </summary>
         PNG,
+
         /// <summary>
         /// Bitmap
         /// </summary>

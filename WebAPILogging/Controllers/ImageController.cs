@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Threading.Tasks;
 using WebApiRestLogging.Models;
 using WebApiRestLogging.Services;
 
@@ -39,7 +37,6 @@ namespace WebApiRestLogging.Controllers
         [HttpGet]
         [ActionName("GetImageById")]
         [Route("(api/Image/GetImageById/{Id}")]
-
         public async Task<IActionResult> GetImageById(int Id)
         {
             _logger.LogInformation("You requested a method {MethodName}", System.Reflection.MethodBase.GetCurrentMethod().Name);

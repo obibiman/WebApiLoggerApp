@@ -1,0 +1,39 @@
+﻿@page "/upload"
+@using BlazorDbFileUpload.Data
+@using BlazorDbFileUpload.Services
+@using BlazorInputFile
+@using System.IO
+@inherits OwningComponentBase<ImgService>
+<h3>Imagesupload</h3>
+<hr />
+
+<EditForm Model="@imgObj" OnValidSubmit="@Validsubmit">
+    Image Name: <input type="text" @bind="@imgObj.Imgname"/>
+    <InputFile OnChange="HandleFileSelected"></InputFile>
+    <button type="submit">Insert</button>
+</EditForm>
+@code {
+
+    ImgClass imgObj = new ImgClass();
+    public byte[] ImgUploaded { get; set; }
+    public string Imgname { get; set; }
+
+    void Validsubmit()
+    {
+        imgObj.ImgId = 0;
+        imgObj.Img = ImgUploaded;
+        imgObj.Imgname = Imgname;
+        Service.Uploadimg(imgObj);
+    }
+
+    async Task HandleFileSelected(IFileListEntry[] files)
+    {
+        var file = files.FirstOrDefault();
+        if (file != null)
+        {
+            var ms = new MemoryStream();
+            await file.Data.CopyToAsync(ms);
+            ImgUploaded = ms.ToArray();
+        }
+    }
+}

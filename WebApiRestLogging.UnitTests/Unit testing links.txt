@@ -5,3 +5,8 @@ https://docs.microsoft.com/en-us/aspnet/web-api/overview/testing-and-debugging/u
 https://code-maze.com/unit-testing-aspnetcore-web-api/#creatingtestingproject
 
 https://code-maze.com/unit-testing-aspnetcore-web-api/#creatingtestingproject
+
+https://www.c-sharpcorner.com/UploadFile/dacca2/unit-test-using-mock-object-in-dependency-injection/
+
+https://docs.microsoft.com/en-us/aspnet/core/blazor/file-uploads?view=aspnetcore-5.0
+

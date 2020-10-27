@@ -44,7 +44,7 @@ namespace WebApiRestLogging.Controllers
             var theGrocery = await _repo.GetByIdAsync(Id);
             return Ok(theGrocery);
         }
-        
+
         /// <summary>
         /// Get list of groceries
         /// </summary>

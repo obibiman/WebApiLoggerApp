@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace WebApiRestLogging.IntegrationTests
@@ -8,7 +7,6 @@ namespace WebApiRestLogging.IntegrationTests
         [Fact]
         public void Test1()
         {
-
         }
     }
 }

@@ -1,3 +1,28 @@
-{"Timestamp":"2020-10-25T16:56:24.6062443-05:00","Level":"Information","MessageTemplate":"Application starting up","Properties":{"MachineName":"MAURICEOPTIPLEX","ProcessId":18040,"ThreadId":1}}
-{"Timestamp":"2020-10-25T17:21:18.1728627-05:00","Level":"Information","MessageTemplate":"Application starting up","Properties":{"MachineName":"MAURICEOPTIPLEX","ProcessId":16224,"ThreadId":1}}
-{"Timestamp":"2020-10-25T17:21:48.2240120-05:00","Level":"Information","MessageTemplate":"Application starting up","Properties":{"MachineName":"MAURICEOPTIPLEX","ProcessId":18204,"ThreadId":1}}
+{
+    "Timestamp": "2020-10-25T16:56:24.6062443-05:00",
+    "Level": "Information",
+    "MessageTemplate": "Application starting up",
+    "Properties": {
+        "MachineName": "MAURICEOPTIPLEX",
+        "ProcessId": 18040,
+        "ThreadId": 1
+    }
+} {
+    "Timestamp": "2020-10-25T17:21:18.1728627-05:00",
+    "Level": "Information",
+    "MessageTemplate": "Application starting up",
+    "Properties": {
+        "MachineName": "MAURICEOPTIPLEX",
+        "ProcessId": 16224,
+        "ThreadId": 1
+    }
+} {
+    "Timestamp": "2020-10-25T17:21:48.2240120-05:00",
+    "Level": "Information",
+    "MessageTemplate": "Application starting up",
+    "Properties": {
+        "MachineName": "MAURICEOPTIPLEX",
+        "ProcessId": 18204,
+        "ThreadId": 1
+    }
+}
