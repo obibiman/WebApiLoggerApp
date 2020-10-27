@@ -1,0 +1,7 @@
+﻿https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing?view=aspnetcore-3.1
+
+https://docs.microsoft.com/en-us/aspnet/web-api/overview/testing-and-debugging/unit-testing-controllers-in-web-api
+
+https://code-maze.com/unit-testing-aspnetcore-web-api/#creatingtestingproject
+
+https://code-maze.com/unit-testing-aspnetcore-web-api/#creatingtestingproject
