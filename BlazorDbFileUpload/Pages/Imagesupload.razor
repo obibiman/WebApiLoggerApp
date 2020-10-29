@@ -8,7 +8,7 @@
 <hr />
 
 <EditForm Model="@imgObj" OnValidSubmit="@Validsubmit">
-    Image Name: <input type="text" @bind="@imgObj.Imgname"/>
+    Image Name: <input type="text" @bind="@_imageName"/>
     <InputFile OnChange="HandleFileSelected"></InputFile>
     <button type="submit">Insert</button>
 </EditForm>
@@ -16,13 +16,13 @@
 
     ImgClass imgObj = new ImgClass();
     public byte[] ImgUploaded { get; set; }
-    public string Imgname { get; set; }
+    private string _imageName;
 
     void Validsubmit()
     {
         imgObj.ImgId = 0;
         imgObj.Img = ImgUploaded;
-        imgObj.Imgname = Imgname;
+        imgObj.Imgname = _imageName;
         Service.Uploadimg(imgObj);
     }
 
